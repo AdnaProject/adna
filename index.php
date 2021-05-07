@@ -48,7 +48,8 @@
 							<h3>You have <b><?php echo(count($r->smembers($user . '-tasks'))); ?></b> Tasks</h3>
 
 							<form action="addtask.php" method="get">
-                              <input class="form-control" type="text" id="task" name="task" placeholder="New Task"><br>
+                              <input class="form-control" type="text" id="task" name="task" placeholder="Name"><br>
+                              <input class="form-control" type="text" id="url" name="url" placeholder="URL"><br>
                               <input class="form-control" type="submit" value="Add Task">
                             </form>
 
@@ -67,7 +68,7 @@
 
 					echo('
 
-					<div class="container bg-light bg-gradient rounded shadow" style="padding-top:5px;padding-bottom:1px;width:100%">
+					<div class="container bg-light bg-gradient rounded shadow" style="padding-top:1rem;padding-bottom:0.5rem;width:100%">
 						<div class="row">
 							<div class="col-1">
 								<div class="form-check">
@@ -75,7 +76,7 @@
 								</div>
 							</div>
 							<div class="col">
-								<p>' . $r->hget($user . '-task-' . $task, 'name') . '</p>
+								<p><a href="' . $r->hget($user . '-task-' . $task, 'url') . '" target="_blank">' . $r->hget($user . '-task-' . $task, 'name') . '</a></p>
 							</div>
 						</div>
 					</div>

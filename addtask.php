@@ -16,12 +16,14 @@
     require('include.php');
 
     $name = $_GET['task'];
+    $url = $_GET['url'];
 
     $tasknum = count($r->smembers($user . '-tasks')) + 1;
 
     $r->sadd($user . '-tasks', $tasknum);
 
     $r->hset($user . '-task-' . $tasknum, 'name', $name);
+    $r->hset($user . '-task-' . $tasknum, 'url', $url);
 
     header('Location: index.php');
 
