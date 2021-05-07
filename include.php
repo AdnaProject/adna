@@ -27,4 +27,6 @@
 
     $user = '1';
 
+    exec('redis-server --daemonize yes');
+
 ?>

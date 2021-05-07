@@ -36,8 +36,9 @@
 		</div>
 		<div class="ui container-lg bg-light bg-gradient rounded shadow text-center text-wrap" style="padding-top:1rem;padding-bottom:2rem">
 		<div class="container bg-light bg-gradient rounded shadow-lg text-center" style="padding-top:5px;padding-bottom:5px;width:50%">
-			<h2 style="font-size:100px">adna</h2>
-			<h3>Version 0.1 Beta</h3>
+			<img src="AdnaProject.png" height="200px" width="200px" />
+			<h2>adna</h2>
+			<h4>Version 0.2 Beta</h4>
 		</div>
 		<br>
 		<div class="row row-cols-1">
@@ -47,7 +48,7 @@
 						<center>
 							<h3>You have <b><?php echo(count($r->smembers($user . '-tasks'))); ?></b> Tasks</h3>
 
-							<form action="addtask.php" method="get">
+							<form action="addtask.php" method="get" target="_blank">
                               <input class="form-control" type="text" id="task" name="task" placeholder="Name"><br>
                               <input class="form-control" type="text" id="url" name="url" placeholder="URL"><br>
                               <input class="form-control" type="submit" value="Add Task">

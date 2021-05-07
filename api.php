@@ -15,7 +15,9 @@
 
     require('include.php');
 
-    $user = $r->hget('apikeys', $_GET['apikey']));
+    $apikey = $_GET['apikey'];
+
+    $user = $r->hget('apikeys', $apikey);
     $name = $_GET['taskname'];
     $action = $_GET['action'];
 
