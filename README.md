@@ -5,6 +5,9 @@ An Open Source To-Do List Program: Built from the ground up to be lightweight, e
 
 Any contributions you can make would be greatly appreciated!
 
+### How to run with Docker
+Follow the instructions [here](https://hub.docker.com/r/lincolnthedev/adna).
+
 ### To Do
     - Fix Rest API
     - Ability to import from other platforms (such as Remember the Milk)
