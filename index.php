@@ -21,6 +21,13 @@
 <html>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Comfortaa;
+        }
+    </style>
 	<body>
 		<br><br>
 		<div class="small-screen container bg-light bg-gradient rounded shadow-lg text-center" style="padding-top:1rem;padding-bottom:1rem;width:80%;display:none">
@@ -36,7 +43,7 @@
 		<div class="row row-cols-1">
 			<div class="col">
 				<div class="container bg-light bg-gradient rounded shadow" style="padding-top:1rem;padding-bottom:2rem;width:90%;margin-top:0.5rem;margin-bottom:0.5rem">
-					<div class="container bg-primary bg-gradient rounded shadow" style="padding-top:2px;padding-bottom:1px;width:100%">
+					<div class="container bg-primary bg-gradient rounded shadow" style="padding-top:1rem;padding-bottom:1px;width:100%">
 						<center>
 							<h3>You have <b><?php echo(count($r->smembers($user . '-tasks'))); ?></b> Tasks</h3>
 
