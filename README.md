@@ -8,3 +8,6 @@ Any contributions you can make would be greatly appreciated!
     - Ability to import from other platforms (such as Remember the Milk)
     - More fields on tasks
     - Clean up code
+
+### Donate
+Want to support to the Adna Project? We accept Brave donations! Just go to [@lincolnthedev](https://github.com/lincolnthedev)'s profile and tip him. Thank you!
