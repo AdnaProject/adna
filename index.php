@@ -48,7 +48,7 @@
 						<center>
 							<h3>You have <b><?php echo(count($r->smembers($user . '-tasks'))); ?></b> Tasks</h3>
 
-							<form action="addtask.php" method="get" target="_blank">
+							<form action="addtask.php" method="get">
                               <input class="form-control" type="text" id="task" name="task" placeholder="Name"><br>
                               <input class="form-control" type="text" id="url" name="url" placeholder="URL"><br>
                               <input class="form-control" type="submit" value="Add Task">
