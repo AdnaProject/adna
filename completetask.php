@@ -13,6 +13,7 @@
 
     */
 
+    $usercheck = 'yes';
     require('include.php');
 
     $task = $_GET['task'];

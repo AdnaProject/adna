@@ -13,6 +13,7 @@
 
     */
 
+    $usercheck = 'no';
     require('include.php');
 
 
