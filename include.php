@@ -25,7 +25,17 @@
 
     $r = $redis;
 
-    $user = '1';
+    if ( $usercheck !== 'no' ) {
+        if ( $_COOKIE['username'] !== null and $_COOKIE['password'] !== null ) {
+            if ( password_verify($_COOKIE['password'], $r->hget('users', $_COOKIE['username'])) ) {
+                $user = $_COOKIE['username'];
+            } else {
+                header('Location: login.php');
+            }
+        } else {
+            header('Location: login.php');
+        }
+    }
 
     exec('redis-server --daemonize yes');
 
