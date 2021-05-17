@@ -11,4 +11,5 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" &&
 WORKDIR /var/www/html
 
 RUN git clone https://github.com/AdnaProject/adna .
+RUN git pull
 RUN composer require predis/predis
