@@ -31,6 +31,7 @@
             }
         } else {
             $r->hset('users', $_POST['username'], password_hash($_POST['password'], PASSWORD_DEFAULT));
+            echo('Account Created! Please login to continue');
         }
 
     }
@@ -58,7 +59,7 @@
     		<div class="ui container-lg bg-light bg-gradient rounded shadow text-center text-wrap" style="padding-top:1rem;padding-bottom:2rem">
     		<div class="container bg-light bg-gradient rounded shadow-lg text-center" style="padding-top:5px;padding-bottom:5px;width:50%">
     			<img src="AdnaProject.png" height="200px" width="200px" />
-    			<h2>adna</h2>
+    			<?php echo('<h2>' . $sitename . '</h2>'); ?>
     			<h4>Version 0.3 Beta</h4>
     		</div>
     		<br>

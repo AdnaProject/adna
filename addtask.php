@@ -23,6 +23,17 @@
     $r->sadd($user . '-tasks', $tasknum);
 
     $r->hset($user . '-task-' . $tasknum, 'name', $name);
+
+    /*
+    $prefixhttps = 'https://';
+    $prefixhttp = 'http://';
+    $str = $name;
+
+    if ( substr($str, 0, strlen($prefixhttps)) == $prefixhttps ) {
+        $str = substr($str, strlen($prefixhttps));
+    }
+    */
+
     $r->hset($user . '-task-' . $tasknum, 'url', $url);
 
     header('Location: index.php');

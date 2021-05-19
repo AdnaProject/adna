@@ -39,4 +39,6 @@
 
     exec('redis-server --daemonize yes');
 
+    $sitename = 'adna';
+
 ?>
