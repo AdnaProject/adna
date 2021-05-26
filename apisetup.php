@@ -13,7 +13,7 @@
 
     */
 
-    $usercheck = 'no';
+    $usercheck = 'yes';
     require('include.php');
 
 
@@ -24,7 +24,9 @@
     if ( $r->get($user . '-apikey') !== null ) {
 
         echo('
-            Your API key is <b>' . $r->get($user . '-apikey') . '</b>
+        <center><br>
+            Your API key is: <br><h3>' . $r->get($user . '-apikey') . '</h3>
+        </center>
         ');
 
     } else {

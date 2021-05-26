@@ -40,5 +40,6 @@
     exec('redis-server --daemonize yes');
 
     $sitename = 'adna';
+    $version = '0.3.2 Beta';
 
 ?>
