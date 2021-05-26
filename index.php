@@ -39,7 +39,7 @@
 		<div class="container bg-light bg-gradient rounded shadow-lg text-center" style="padding-top:5px;padding-bottom:5px;width:50%">
 			<img src="AdnaProject.png" height="200px" width="200px" />
 			<?php echo('<h2>' . $sitename . '</h2>'); ?>
-			<h4>Version 0.3 Beta</h4>
+			<h4>Version <?php echo($version); ?></h4>
 		</div>
 		<br>
 		<div class="row row-cols-1">
@@ -94,6 +94,7 @@
 
 				</div>
 			</div>
+			<center><h2>adna - <a href="https://github.com/AdnaProject">GitHub</a></h2></center>
 		</div>
 	</body>
 </html>
