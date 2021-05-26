@@ -19,4 +19,4 @@ Follow the instructions [here](https://hub.docker.com/r/lincolnthedev/adna).
     - Clean up code
 
 ### Donate
-Want to support to the Adna Project? We accept Brave donations! Just go to [@lincolnthedev](https://github.com/lincolnthedev)'s profile and tip him. Thank you!
+Donations coming soon
